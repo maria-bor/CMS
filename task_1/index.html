@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task 1</title>
+    <meta name="description" content="The HTML5">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h3>Task 1. Wykonanie statycznej strony pobierającej dane (ustalone) i wizualizującej je</h3>
+    </header>
+
+    <main>
+        <article>
+            </br>
+            <form id="device-data">
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <fieldset>
+                            <label> Urządzenie:
+                                <select>
+                                    <option value="drukarka">Drukarka</option>
+                                    <option value="klawiatura">Klawiatura</option>
+                                </select>
+                            </label>
+                            <label> Typ:
+                                <select>
+                                    <option value="drukarkaTyp">Drukarka 001</option>
+                                    <option value="klawiaturaTyp">Klawiatura 001</option>
+                                </select>
+                            </label>
+                            <label> Data od:
+                                <select id="dataOd"></select>
+                            </label>
+                            <label> Data do:
+                                <select id="dataDo"></select>
+                            </label>
+                            <button type="button" id='buttLaduj'>Ładuj</button>
+                        </fieldset>
+                    </div>
+
+                </div>
+            </form>
+            </br></br></br>
+            <div class="row">
+                <div class="col-11">
+                    <div id='visualization'></div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src='js/1.js'></script>
+</body>
+
+</html>
